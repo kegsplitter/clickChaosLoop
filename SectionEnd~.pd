@@ -1,0 +1,16 @@
+#N canvas 595 388 450 300 10;
+#X obj 67 45 inlet~;
+#X obj 103 224 +~;
+#X obj 103 246 outlet~;
+#X obj 85 140 *~;
+#X obj 123 142 *~;
+#X obj 149 77 receive \$1_thoughGate;
+#X obj 168 103 receive \$1_bypassGate;
+#X obj 129 46 receive~ \$1_bypassSignal;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 1;
+#X connect 5 0 3 1;
+#X connect 6 0 4 1;
+#X connect 7 0 4 0;
